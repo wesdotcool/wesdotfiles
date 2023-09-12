@@ -1,0 +1,7 @@
+\set QUIET 1
+
+\x auto
+\timing
+\pset null 'NULL'
+
+\set QUIET 0
