@@ -1,0 +1,36 @@
+# This is Git's per-user configuration file.
+[user]
+# Please adapt and uncomment the following lines:
+#	name = Wes Hunt
+#	email = [YOUR EMAIL HERE]
+[user]
+    name = Wes Hunt
+    email = wes@example.com
+[alias]
+    co = checkout
+[push]
+    default = current
+[color]
+    branch = auto
+    diff = auto
+    status = auto
+[color "branch"]
+    current = yellow reverse
+    local = yellow
+    remote = green
+[color "status"]
+    branch = cyan bold
+[color "diff"]
+    meta = yellow bold
+    frag = magenta bold
+    old = red bold
+    new = green bold
+[filter "lfs"]
+	clean = git-lfs clean -- %f
+	smudge = git-lfs smudge -- %f
+	process = git-lfs filter-process
+	required = true
+[core]
+	excludesFile = ~/.global_gitignore
+[init]
+	defaultBranch = main
